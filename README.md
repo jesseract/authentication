@@ -16,6 +16,7 @@ Change their own passwords
 Change their name without changing their password at the same time
 Log out
 Teachers should NOT see other teachers' students
+
 Normal Mode
 
 You run a school, and you know that your teachers can't seem to keep track of parental e-mail addresses (or, if they can, they spend too much time on it). You want the teachers to be able to log into a simple system and create/update/delete parent e-mail addresses. For each parent, you need to keep track of the student name, the parent name, and the parent e-mail address.
