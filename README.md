@@ -1,4 +1,16 @@
-# authentication
+# Authentication
+
+## Description:
+This program will allow teacher to keep track of their students' parents by email.
+
+## Requirements:
+This Ruby project does not require any additional gems.
+
+## How to run:
+In theory this will eventually run from Heroku.
+
+
+<!-- # authentication
 Simple Homegrown Authentication
 Deliverables
 
@@ -21,4 +33,4 @@ Normal Mode
 
 You run a school, and you know that your teachers can't seem to keep track of parental e-mail addresses (or, if they can, they spend too much time on it). You want the teachers to be able to log into a simple system and create/update/delete parent e-mail addresses. For each parent, you need to keep track of the student name, the parent name, and the parent e-mail address.
 
-In Normal Mode, you will have two models: Teacher and Parent.
+In Normal Mode, you will have two models: Teacher and Parent. -->
