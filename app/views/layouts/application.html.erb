@@ -8,8 +8,9 @@
 </head>
 <body>
 
-<%= session[:email] %>
-<%= yield %>
+  <%= session[:id] %>
+    <%= link_to "Logout", logout_path %>
+    <%= yield %>
 
 </body>
 </html>

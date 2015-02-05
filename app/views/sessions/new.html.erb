@@ -1,9 +1,11 @@
-<h1>Teachers Go Here</h1>
+<h1>Teacher's Login</h1>
+<p id="notice"><%= notice %></p>
 
 <%= form_tag sessions_path do %>
-<%= label_tag :email %>
-<%= email_field_tag :email, params[:email] %>
-
-<%= submit_tag "Login Here" %>
+  <%= label_tag :email %>
+  <%= email_field_tag :email, params[:email] %>
+  <%= label_tag :password %>
+  <%= password_field_tag :password, params[:password] %>
+  <%= submit_tag "Login Here" %>
 
 <% end %>
