@@ -23,10 +23,21 @@ class SessionsController < ApplicationController
 
     session[:id] = teacher.id
     redirect_to parents_path
+  end
 
+  def change_password(pswd)
+    self.password = pswd
+    password_confirmation = pswd
+    return changed? && save
+  end
 
-
-
+  def change_password(old_pswd, pswd, confirm_pswd)
+    return false, 'Old password is incorrect' if !valid_password?(old_pswd, true)
+    self.password = pswd
+    password_confirmation = confirm_pswd
+    # update_attributes([user: [password: pswd, password_confirmation: confirm_pswd]])
+    print "--------- #{old_pswd} #{pswd} #{confirm_pswd} #{changed?.to_s} ------------"
+    return changed? && save, 'New and confirm password are not correct'
   end
 
   def destroy
